@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+}
+
+main {
+	background-color: black;
+	width: 100%;
+}
+
+nav {
+	padding: 20% 0;
+}
+
+.navbar-brand {
+	width: 150px;
+	margin: 0 0 10px 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	text-decoration: none;
+	color: white;
+	margin: 10px 30px;
+	font-family: Poppins, sans-serif;
+	font-size: 1vw;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+	color: #EE236B;
+	font-weight: bolder;
+}
+
+#heading1 {
+	padding-top: 7.5%;
+	width: 75%;
+}
+
+#pageHero {
+	height: 40vw;
+}
+
+
+h1 {
+	color: white;
+	font-size: 15vw;
+	font-family: 'Domaine';
+	float: right;
+	font-weight: bolder;
+}
+
+#portfolio {
+	margin: 4rem;
+}
+
+
+#portfolio img {
+	width: 100%;
+	height: auto;
+	padding: 0 0.75rem;
+}
+
+
+.overlay {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #008CBA;
+}
+
+#portfolio .row div:nth-of-type(1):hover .overlay{
+	opacity: 1;
+}

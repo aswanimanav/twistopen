@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	background-color: white;
+}
+
+main {
+	background-color: black;
+	width: 100%;
+}
+
+nav {
+	padding: 20% 0;
+}
+
+.navbar-brand {
+	width: 150px;
+	margin: 0 0 10px 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	text-decoration: none;
+	color: white;
+	margin: 10px 30px;
+	font-family: Poppins, sans-serif;
+	font-size: 1vw;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+	color: #EE236B;
+	font-weight: bolder;
+}
+
+#heading1 {
+	padding-top: 7.5%;
+	width: 75%;
+}
+
+#pageHero {
+	height: 40vw;
+}
+
+
+#pageHero h1 {
+	color: white;
+	font-size: 15vw;
+	font-family: 'Domaine';
+	float: right;
+	font-weight: bolder;
+}
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: black;
+}
+
+.carousel-cell {
+  width: 40vw;
+  height: 25vw;
+  margin-right: 80px;
+  counter-increment: carousel-cell;
+  text-align: left;
+  font-size: 4vw;
+  color: white;
+  margin: 2vw;
+  padding: 2vw 4vw;
+  line-height: 5vw;
+  font-family: Poppins, sans-serif;
+  font-weight: bolder;
+}
+
+.carousel-cell:nth-of-type(1) {
+  background: #0081FF;
+}
+
+.carousel-cell:nth-of-type(2) {
+  background: #FF811D;
+}
+
+.carousel-cell:nth-of-type(3) {
+  background: #FFC72A;
+}
+
+.carousel-cell:nth-of-type(4) {
+  background: #20B58D;
+}
+
+.carousel-cell:nth-of-type(5) {
+  background: #EE236B;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+#busOff {
+	color: white;
+	font-size: 6vw;
+	font-family: 'Domaine';
+	font-weight: bolder;
+}
+
+#services {
+	background-color: black;
+}
+
+#clients {
+	background-color: white;
+	margin: 0 4vw;
+	padding: 10vw 0 7vw;
+}
+
+#clients h1 {
+	color: black;
+	font-size: 6vw;
+	font-family: 'Domaine';
+	font-weight: bolder;
+	margin-bottom: 7vw;
+}
+
+#clients h3 {
+	color: black;
+	font-family: Poppins, sans-serif;
+	font-size: 2vw;
+	font-weight: 900;
+	margin-left: 1.5em;
+}
+
+.heyday img {
+	margin-top: 2vw;
+	width: 30%;
+}
+
+.category {
+	width: 49%;
+	display: inline-block;
+}
+
+
+@media (max-width: 992px) {
+	.category {
+		width: 100%;
+	}
+}
