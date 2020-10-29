@@ -1,9 +1,15 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
 body {
 	margin: 0;
 	font-family: Poppins, sans-serif;
     font-size: 1.38vw;
     line-height: 125%;
-    font-weight: 200;
+	font-weight: 200;
+	 height: 100%;
+    overflow: auto;
 }
 
 main {
@@ -50,7 +56,7 @@ nav {
 h1 {
 	color: white;
 	font-size: 15vw;
-	font-family: 'Domaine';
+	font-family: 'Domine';
 	float: right;
 	font-weight: bolder;
 }
@@ -76,14 +82,36 @@ h1 {
     border: 0;
     max-width: 100%;
     vertical-align: middle;
-    display: inline-block;
+	display: inline-block;
+}
+
+.app-ux {
+	width: 80%;
 }
 
 .normal-work-tile {
-	width: 20%;
+	width: 21%;
 	margin-right: 0;
 	margin-bottom: 3%;
 }
+
+
+
+.large-work-tile {
+	display: flex;
+	width: 45%;
+	margin-right: 2%;
+	margin-bottom: 3%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.large-work-tile.ee {
+	width: 40%;
+	font-family: Domine;
+}
+
 
 .work-tile-heading {
 	margin-bottom: 3px;
@@ -91,11 +119,38 @@ h1 {
 	line-height: 125%;
 	font-size: 1.67vw;
 	margin-top: 10px;
+	font-weight: 900;
+}
+
+.work-tile-heading.dd.last {
+	font-size: 1.45vw;
+	text-align: center;
+}
+
+.work-tile-heading.ee {
+    font-family: 'Domine';
+    font-size: 1.75vw;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.work-tile-heading.dd.form-copy {
+    font-size: 4.16vw;
+	font-weight: 700;
+	font-family: Domine;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .work-tile-client {
 	margin-bottom: 5px;
 	color: black;
+}
+
+.work-tile-client.pink {
+	text-align: center;
+	font-weight: 500;
+	color: #ff3c78;
 }
 
 
@@ -126,6 +181,50 @@ a:link {
 	background-color: #FCAD15;
 }
 
+.scoryboard {
+	background-color: #2E2113;
+}
+
+.marketsn {
+	background-color: #245A91;
+}
+
+.the-economy {
+	background-color: #D3534E;
+}
+
+.joule-iq {
+	background-color: #38ADE2;
+}
+
+.immersion-ux {
+	background-color: #0B302D;
+}
+
+.ferroli {
+	background-color: #E78445;
+}
+
+.gram-vikas {
+	background-color: #651924;
+}
+
+.iziel {
+	background-color: #00ABAF;
+}
+
+.koinearth {
+	background-color: #333C4B;
+}
+
+.marketsn2 {
+	background-color: #6B7A8F;
+}
+
+.core-econ {
+	background-color: #72C064;
+}
+
 .text {
 	color: white;
   font-size: 1.25vw;
@@ -141,8 +240,46 @@ a:link {
   text-align: left;
 }
 
+.text-field {
+	padding: 33px;
+    font-size: 2vw;
+    line-height: 140%;
+    text-align: left;
+}
+
+.w-input {
+	display: block;
+    width: 100%;
+	height: 38px;
+	margin:0 10px;
+	color: #333;
+    background-color: #fff;
+	border: 1px solid #ccc;
+	font-weight: 200;
+}
+
 .overlay:hover {
 	opacity: 1;
+}
+
+.work-page-form {
+	width: 80%;
+}
+
+.form-2 {
+	text-align: center;
+}
+
+.work-page-shout {
+	background-color: white;
+	border: none;
+	margin-top: 2vw;
+}
+
+.work-page-shout.pink {
+    color: #ff3c78;
+    font-size: 2vw;
+    font-weight: 500;
 }
 
 
@@ -152,14 +289,86 @@ a:link {
 		margin-right: 2%;
 	}
 
+	.large-work-tile, .large-work-tile.ee {
+		width: 64%;
+	}
+
+	.work-tile-heading {
+		font-size: 1.75vw;
+		line-height: 125%;
+	}
+
+	.work-tile-client {
+    	font-size: 1.5vw;
+	}
+
 	#portfolio {
 		padding: 50px 40px;
 	}
+
+	.text-field {
+    padding: 15px;
+}
 }
 
 @media screen and (max-width: 768px) {
 	.normal-work-tile {
-		width: 45%;
+		width: 100%;
 		margin-right: 0;
+	}
+
+	.large-work-tile, .large-work-tile.ee {
+		width: 95%;
+	}
+
+	.work-tile-heading.dd.last {
+    font-size: 20px;
+}
+
+	.work-tile-heading {
+		margin-bottom: 1px;
+		font-size: 20px;
+		line-height: 130%;
+}
+
+.work-tile-client {
+    font-size: 12px;
+    line-height: 125%;
+}
+
+}
+
+@media screen and (max-width: 479px) {
+
+	#portfolio {
+		padding: 50px 15px 0px;
+	}
+
+	.large-work-tile, .normal-work-tile {
+    	margin-bottom: 10%;
+	}
+
+	.work-tile-heading.dd.form-copy {
+    	font-size: 30px;
+	}
+
+	.text-field {
+		font-size: 16px;
+	}
+
+	.work-page-shout.pink {
+		font-size: 20px;
+		padding: 5px;
+		margin-top: 15px;
+	}
+
+	.work-tile-client {
+		font-size: 16px;
+	}
+	.work-tile-heading, .work-tile-heading.dd.last {
+		font-size: 22px;
+	}
+	.txt-center {
+		text-align: center;
 	}
 }
