@@ -23,6 +23,7 @@ nav {
 	margin: 10px 30px;
 	font-family: Poppins, sans-serif;
 	font-size: 1vw;
+	font-weight: lighter;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -31,7 +32,7 @@ nav {
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
 	color: #EE236B;
-	font-weight: bolder;
+	font-weight: 500;
 }
 
 #heading1 {
@@ -118,6 +119,16 @@ body { font-family: sans-serif; }
 	background-color: black;
 }
 
+.client-block {
+	width: 95%;
+	margin: 0 auto;
+	margin-bottom: 10.83vw;
+}
+
+.last-block {
+	margin-bottom: 0;
+}
+
 #clients {
 	background-color: white;
 	margin: 0 4vw;
@@ -137,7 +148,8 @@ body { font-family: sans-serif; }
 	font-family: Poppins, sans-serif;
 	font-size: 2vw;
 	font-weight: 900;
-	margin-left: 1.5em;
+	margin-left: 1em;
+	margin-bottom: 1em;
 }
 
 .heyday img {
@@ -146,8 +158,12 @@ body { font-family: sans-serif; }
 }
 
 .category {
-	width: 49%;
+	width: 45%;
 	display: inline-block;
+}
+
+.last {
+	float: right;
 }
 
 
