@@ -282,6 +282,72 @@ a:link {
     font-weight: 500;
 }
 
+footer {
+	padding: 70px 0;
+	background-color: black;
+}
+
+.footer-container {
+    margin: auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-logo img {
+	max-width: 320px;
+}
+
+.social-media {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding: 24px 0;
+}
+
+.social-media a{
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.mr-link {
+	margin-right: 43px;
+}
+
+.prim-links a, .seco-links a {
+	font-size: 3vw;
+	color: white;
+	font-family: Domine;
+	margin:0 3vw;
+}
+
+.seco-links {
+	margin: 2vw 0 0 7vw;
+}
+
+footer .active {
+	color: #ff3c78;
+}
+
+
+/* media queries  */
+
+@media screen and (max-width: 1200px) {
+	.seco-links {
+		margin: 3.5vw 0 0 7vw;
+	}
+}
+
+
+
 
 @media screen and (max-width: 992px) {
 
@@ -313,8 +379,21 @@ a:link {
 	}
 
 	.text-field {
-    padding: 15px;
-}
+    	padding: 15px;
+	}
+
+	.footer-container {
+		padding: 0 40px;
+	}
+
+	.footer-logo img {
+		max-width: 30vw;
+	}
+
+	.social-media a {
+		max-width: 3vw;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -328,19 +407,47 @@ a:link {
 	}
 
 	.work-heading.dd.last {
-    font-size: 20px;
-}
+    	font-size: 20px;
+	}
 
 	.work-heading {
 		margin-bottom: 1px;
 		font-size: 20px;
 		line-height: 130%;
-}
+	}
 
-.work-desc {
-    font-size: 12px;
-    line-height: 125%;
-}
+	.work-desc {
+		font-size: 12px;
+		line-height: 125%;
+	}
+
+	.footer-container {
+		flex-direction: column;
+	}
+
+	.left-col, .right-col {
+		width: 100%;
+		
+	}
+
+	.right-col {
+		flex-direction: row;
+		margin-top: 40px;
+	}
+
+	.prim-links {
+		justify-content: flex-start;
+		margin-top: 20px;
+		width: 60%;
+	}
+
+	.prim-links, .seco-links {
+		display: inline;
+	}
+
+	.seco-links {
+		margin-left: 3vw;
+	}
 
 }
 
@@ -378,5 +485,9 @@ a:link {
 	}
 	.txt-center {
 		text-align: center;
+	}
+
+	.social-media a {
+		font-size: 20px;
 	}
 }
