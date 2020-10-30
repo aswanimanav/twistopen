@@ -5,9 +5,13 @@ html {
 
 body {
 	margin: 0;
+	font-family: Poppins, sans-serif;
+    font-size: 1.38vw;
+    line-height: 125%;
+	font-weight: 200;
+	 height: 100%;
+	overflow: auto;
 	background-color: white;
-	height: 100%;
-    overflow: auto;
 }
 
 main {
@@ -17,6 +21,9 @@ main {
 
 nav {
 	padding: 20% 0;
+}
+a:link {
+	text-decoration: none;
 }
 
 .navbar-brand {
@@ -64,7 +71,7 @@ nav {
 
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+/* body { font-family: sans-serif; } */
 
 .carousel {
   background: black;
@@ -174,8 +181,128 @@ body { font-family: sans-serif; }
 }
 
 
+footer {
+	padding: 70px 0;
+	background-color: black;
+}
+
+
+.footer-container {
+    margin: auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-logo img {
+	max-width: 320px;
+}
+
+.social-media {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding: 24px 0;
+}
+
+.social-media a{
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.mr-link {
+	margin-right: 43px;
+}
+
+.prim-links a, .seco-links a {
+	font-size: 3vw;
+	color: white;
+	font-family: Domine;
+	margin:0 3vw;
+}
+
+.seco-links {
+	margin: 2vw 0 0 7vw;
+}
+
+footer .active {
+	color: #ff3c78;
+}
+
+
+/* media queries  */
+
+@media screen and (max-width: 1200px) {
+	.seco-links {
+		margin: 3.5vw 0 0 7vw;
+	}
+}
+
+
 @media (max-width: 992px) {
 	.category {
 		width: 100%;
+	}
+
+	.footer-container {
+		padding: 0 40px;
+	}
+
+	.footer-logo img {
+		max-width: 30vw;
+	}
+
+	.social-media a {
+		max-width: 3vw;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.footer-container {
+		flex-direction: column;
+	}
+
+	.left-col, .right-col {
+		width: 100%;
+		
+	}
+
+	.right-col {
+		flex-direction: row;
+		margin-top: 40px;
+	}
+
+	.prim-links {
+		justify-content: flex-start;
+		margin-top: 20px;
+		width: 60%;
+	}
+
+	.prim-links, .seco-links {
+		display: inline;
+	}
+
+	.seco-links {
+		margin-left: 3vw;
+	}
+
+}
+
+
+@media screen and (max-width: 479px) {
+
+
+	.social-media a {
+		font-size: 20px;
 	}
 }
